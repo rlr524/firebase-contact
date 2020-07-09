@@ -23,11 +23,7 @@ function getInputVal(id) {
 }
 
 function clearForm() {
-  document.getElementById("name").value = "";
-  document.getElementById("company").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("phone").value = "";
-  document.getElementById("message").value = "";
+  document.getElementById("contact-form").reset();
 }
 
 function showAlert() {
@@ -38,9 +34,9 @@ function showAlert() {
 }
 
 function showError() {
-  document.querySelector("alert-error").style.display = "block";
+  document.querySelector(".alert-error").style.display = "block";
   setTimeout(function () {
-    document.querySelector("alert-error").style.display = "none";
+    document.querySelector(".alert-error").style.display = "none";
   }, 30000);
 }
 
